@@ -1,0 +1,33 @@
+.cart_icon {
+  padding: 0.2rem 2.5rem 0.2rem 2.5rem;
+  display: flex;
+  border-radius: 50px;
+  background-color: #451602;
+  align-items: center;
+  color:white;
+  font-weight: bold;
+  font-family: Roboto;
+  letter-spacing: 0.05rem;
+  
+}
+
+img {
+  width: 2rem;
+  height: 2rem;
+  margin-right: .7rem;
+}
+
+.quantity {
+  margin-left: 1rem;
+  padding: 0.3rem 0.8rem 0.3rem 0.8rem;
+  border-radius: 50%;
+  background-color: rgb(127, 38, 6);
+}
+
+.cart_icon:hover  {
+  background-color: rgb(129, 60, 34);
+}
+
+
+
+

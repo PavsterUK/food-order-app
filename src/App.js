@@ -1,12 +1,14 @@
 import React, { Fragment } from "react";
 
-import Header from "./MainPage/Header";
+import "./App.css"
+import HomePage from "./HomePage/HomePage";
+
 
 
 function App() {
   return (
     <React.Fragment>
-      <Header/>
+      <HomePage/>
     </React.Fragment>
   );
 }

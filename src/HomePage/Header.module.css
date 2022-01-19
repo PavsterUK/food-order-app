@@ -1,0 +1,26 @@
+.header {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(127, 38, 6);
+}
+
+h1 {
+  color: white;
+  font-family: Antonio;
+  font-size: 2.5rem;
+  letter-spacing: 0.2rem;
+}
+
+.logo_title {
+  display: flex;
+  margin-left: -5rem;
+  align-items: center;
+}
+
+.logo_title img {
+  height: 8rem;
+  width: 8rem;
+  margin-right: 2rem;
+}
