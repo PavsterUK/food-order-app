@@ -1,5 +1,6 @@
 .cart_icon {
-  padding: 0.2rem 2.5rem 0.2rem 2.5rem;
+  margin-right: -2rem;
+  padding: 0.2rem 2rem 0.2rem 2rem;
   display: flex;
   border-radius: 50px;
   background-color: #451602;
@@ -20,12 +21,12 @@ img {
 .quantity {
   margin-left: 1rem;
   padding: 0.3rem 0.8rem 0.3rem 0.8rem;
-  border-radius: 50%;
-  background-color: rgb(127, 38, 6);
+  border-radius: 20px;
+  background-color: #a53005; 
 }
 
 .cart_icon:hover  {
-  background-color: rgb(129, 60, 34);
+  background-color: #6b2203;
 }
 
 
