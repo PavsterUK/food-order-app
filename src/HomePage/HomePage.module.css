@@ -1,21 +1,109 @@
 .homepage {
   height: 100vh;
   width: 100%;
-  background-color: #5f6d70;
+  background-color: #222421;
   position: absolute;
   z-index: -10;
 }
 
 .bg_img {
-  position: absolute;
-  top: 0;
+  position: relative;
   z-index: -5;
+  top: -7rem;
   padding: 0;
-  margin-top: -1rem;
+  margin-top: 0rem;
   height: 60vh;
   width: 100%;
   transform: skew(0deg, -8deg);
   background-image: url(../Images/fish-and-chips-takeaway-1.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.slogan {
+  margin-bottom: -8rem;
+  text-align: center;
+  width: 40vw;
+  transform: skew(0deg, 7deg);
+}
+
+.about {
+  margin-top: -23rem;
+  display: flex;
+  justify-content: center;
+  color: white;
+  
+}
+
+.about p {
+  padding: 1rem;
+  opacity: 1
+}
+
+/* Animation for Slogan */
+.slogan {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes slideInLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes slideInLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+.about {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
 }
