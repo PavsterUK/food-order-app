@@ -7,7 +7,7 @@ import CartButton from "../Cart/CartButton";
 const Header = () => {
   return (
     <div className={styles.header}>
-      <div className={styles.logo_title}>
+      <div className={styles.logo}>
         <img src={fishImage} />
         <h1>Pav's Fish and Chips!</h1>
       </div>
