@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  height: fit-content;
+
+  border: 1px solid yellowgreen;
+}
+
+form {
+  display: inline-block;
+  margin-top: 0em;
+}

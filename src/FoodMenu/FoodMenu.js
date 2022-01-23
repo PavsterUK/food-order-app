@@ -1,6 +1,10 @@
 import React from "react";
+import styles from "./FoodMenu.module.css";
 
-import Card from "../GUI/Card";
+import TopOrnam from "../Images/top-ornament.png";
+import BotOrn from "../Images/bottom-ornament.png";
+import FoodMenuItem from "./FoodMenuItem";
+
 
 const FoodMenu = () => {
   const DUMMY_MENU = [
@@ -12,7 +16,7 @@ const FoodMenu = () => {
     {
       title: "Line caught Grilled MonkFish ",
       description: "Grilled MonkFish caught today by local fishermen",
-      price: 15,
+      price: 15.99,
     },
     {
       title: "Pan Fried Prawns",
@@ -27,15 +31,23 @@ const FoodMenu = () => {
   ];
 
   return (
-    <Card>
+    <div className={styles.container}>
+      <h1>Our Menu</h1>
+      <img className={styles.top_orn} src={TopOrnam} />
+      <br />
+      <hr />
       <div>
-        <ul>
-          {DUMMY_MENU.map((item) => (
-            <li>{item.title}, {item.description}, {item.price}</li>
-          ))}
-        </ul>
+        {DUMMY_MENU.map((item) => (
+          <FoodMenuItem
+            title={item.title}
+            desc={item.description}
+            price={item.price}
+          />
+        ))}
+        Thank You!
       </div>
-    </Card>
+      <img className={styles.bott_orn} src={BotOrn} />
+    </div>
   );
 };
 

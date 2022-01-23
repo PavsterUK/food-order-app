@@ -1,0 +1,39 @@
+
+
+.container {
+  display:flex;
+  flex-flow: wrap row;
+  justify-content: center;
+  text-align: center;
+  width: 60vw;
+  height: fit-content;
+  border-radius: 20px;
+  background-color:seashell;
+  -webkit-box-shadow: 5px 7px 17px 5px rgba(0, 0, 0, 0.65);
+  box-shadow: 5px 7px 17px 5px rgba(0, 0, 0, 0.65);
+  margin-bottom: 5vh;
+  font-family: Antonio;
+  font-size: 1.5rem;
+}
+
+.container h1 {
+  font-size: 3rem;
+  width: 60vw;
+}
+
+.container h4 {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+.top_orn {
+  width: 20vw;
+  height: 25vh;
+  margin-top: -8vh;
+  margin-bottom: -5vh;
+}
+
+.bott_orn {
+  width: 5vw;
+  height: 5vh;
+}

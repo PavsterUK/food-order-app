@@ -7,7 +7,7 @@ import FoodMenu from "../FoodMenu/FoodMenu";
 
 const HomePage = () => {
   return (
-    <div className={styles.homepage}>
+    <div className={styles.container}>
       <Header />
       <div className={styles.paralellogram_shaped_div}>
         <Card>

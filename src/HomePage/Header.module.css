@@ -5,6 +5,9 @@
   align-items: center;
   background-color: #a53005;
   height: max-content;
+  /*position: fixed;
+  z-index: 1;
+  */
 }
 
 .header h1 {

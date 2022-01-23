@@ -26,6 +26,11 @@ img {
 
 .cart_icon:hover {
   background-color: #0a0b0c;
+  transform: scale(.9);
+}
+
+.cart_icon:active{
+  transform: scale(1.1);
 }
 
 .cart_icon {
