@@ -1,0 +1,18 @@
+hr {
+  width: 80%;
+}
+
+.container  {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: fit-content;
+}
+
+h4 {
+  width: 100%;
+}
+
+p {
+  width: 100%;
+}
