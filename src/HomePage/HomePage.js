@@ -10,7 +10,7 @@ const HomePage = () => {
     <div className={styles.container}>
       <Header />
       <div className={styles.paralellogram_shaped_div}>
-        <Card>
+      <Card>
           <p>
             Lorem ipsum dolor sit amet. Qui labore eaque 33 tempore unde id
             internos aspernatur non sunt quia vel quidem voluptas sed voluptas

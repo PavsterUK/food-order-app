@@ -36,7 +36,7 @@ const FoodMenu = () => {
       <img className={styles.top_orn} src={TopOrnam} />
       <br />
       <hr />
-      <div>
+      <div className={styles.items}>
         {DUMMY_MENU.map((item) => (
           <FoodMenuItem
             title={item.title}

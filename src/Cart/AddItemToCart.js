@@ -7,8 +7,9 @@ const AddItemToCart = () => {
     <div className={styles.container}>
       <form >
         <label>Amount</label>
-        <input type="number" />
-        <button>+Add</button>
+        <input type="number"  />
+        <br/>
+        <button>Add </button>
       </form>
     </div>
   );
