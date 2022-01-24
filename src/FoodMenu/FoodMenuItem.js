@@ -10,6 +10,7 @@ const FoodMenuItem = (props) => {
       <br />
       <p>{props.desc}</p>
       <br />£{props.price}
+      <AddItemToCart/>
       <hr />
     </div>
   );
