@@ -3,7 +3,7 @@ import React from "react";
 import Header from "../HomePage/Header";
 import styles from "./HomePage.module.css";
 import Card from "../GUI/Card";
-import FoodMenu from "../FoodMenu/FoodMenu";
+import FoodMenuList from "../FoodMenu/FoodMenuList";
 
 const HomePage = () => {
   return (
@@ -22,7 +22,7 @@ const HomePage = () => {
       <div className={styles.slogan}>
         <h1>Fish and chips worth forking out for. </h1>
       </div>
-      <FoodMenu />
+      <FoodMenuList />
     </div>
   );
 };

@@ -27,6 +27,9 @@
 .paralellogram_shaped_div p {
   color: white;
   padding: 1rem;
+  background-color: #45505675;
+  border-radius: inherit;
+
 }
 
 .slogan {
