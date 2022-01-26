@@ -4,10 +4,12 @@ import styles from "./FoodMenuList.module.css";
 import TopOrnam from "../Images/top-ornament.png";
 import BotOrn from "../Images/bottom-ornament.png";
 import FoodMenuItem from "./FoodMenuItem";
+import MenuContext from "../contexts/MenuContext";
 
 
-const FoodMenu = () => {
-  
+const FoodMenuList = () => {
+
+  const menu = useContext(MenuContext);
   
   return (
       <div className={styles.container}>
@@ -16,7 +18,7 @@ const FoodMenu = () => {
         <br />
         <hr />
         <div className={styles.items}>
-          {MENU.map((item) => (
+          {menu.map((item) => (
             <FoodMenuItem
               key={item.id}
               title={item.title}
@@ -31,4 +33,4 @@ const FoodMenu = () => {
   );
 };
 
-export default FoodMenu;
+export default FoodMenuList;
