@@ -16,4 +16,10 @@
   height: fit-content;
   border: 1px solid red;
   margin-top: 10vh;
+  color: white;
+  padding:1rem;
+}
+
+.card hr {
+  width: 100%;
 }
