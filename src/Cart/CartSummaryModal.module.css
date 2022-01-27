@@ -14,12 +14,70 @@
 .card {
   width: 50vw;
   height: fit-content;
-  border: 1px solid red;
-  margin-top: 10vh;
-  color: white;
+  margin-top: 15vh;
+  color: black;
   padding:1rem;
+  background-color: seashell;
+  border-radius: 20px;
 }
 
 .card hr {
   width: 100%;
+  background-color: #a53005;
+  height: 1px;
+}
+
+.card h4 {
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration: underline;
+}
+
+
+.card h5 {
+  margin: 1vh 0 0 0;
+  padding: 0;
+}
+
+.cart__item {
+  display: flex;
+  justify-content: space-between;
+  
+ 
+  align-items: center;
+}
+
+.qtyControl {
+  display: flex;
+  justify-content:end;
+  width: 25%;
+}
+
+
+.qtyControl button {
+  width: 30%;
+  border-radius: 5px;
+  margin-left: .5vw;
+  background-color: white;
+  color:  #a53005;
+}
+
+.qtyControl button:hover {
+  background-color: #f86c39;
+  color: white;
+}
+
+.qtyControl button:active {
+  background-color: #ffc2ac;
+}
+
+
+.cart_item__desc {
+  width: fit-content;
+}
+
+.totalAmount {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
