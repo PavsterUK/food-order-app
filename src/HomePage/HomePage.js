@@ -5,10 +5,10 @@ import styles from "./HomePage.module.css";
 import Card from "../GUI/Card";
 import FoodMenuList from "../FoodMenu/FoodMenuList";
 
-const HomePage = () => {
+const HomePage = (props) => {
   return (
     <div className={styles.container}>
-      <Header />
+      <Header setCartIsOpen={props.setCartIsOpen} />
       <div className={styles.paralellogram_shaped_div}>
       <Card>
           <p>

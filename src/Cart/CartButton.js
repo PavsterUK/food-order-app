@@ -5,13 +5,16 @@ import CartIcon from "../Images/pngwing.com.png";
 import MenuContext from "../contexts/MenuContext";
 import CountOrderedItems from "../HelperFunctions/CountOrderedItems";
 
-const CartButton = () => {
+const CartButton = (props) => {
 
   const contextItems = React.useContext(MenuContext);
 
+  const openCart = () => {
+    props.setCartIsOpen(true)
+  }
 
   return (
-    <div className={styles.cart_icon}>
+    <div onClick={openCart} className={styles.cart_icon}>
       <img src={CartIcon}></img>
       <p>Your Cart</p>
       <div className={styles.quantity}>

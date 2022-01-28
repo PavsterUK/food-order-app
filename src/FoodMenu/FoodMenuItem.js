@@ -1,7 +1,7 @@
 import React from "react";
 
 import styles from "./FoodMenuItem.module.css";
-import AddItemToCart from "../Cart/AddItemToCart";
+import AddItemToCart from "./AddItemToCart";
 
 const FoodMenuItem = (props) => {
   return (

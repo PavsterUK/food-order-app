@@ -6,8 +6,8 @@ const AddItemToCart = () => {
   return (
     <div className={styles.container}>
       <form >
-        <label>Amount</label>
-        <input type="number"  />
+        <label>Qty</label>
+        <input type="number" min="0"  />
         <br/>
         <button>Add </button>
       </form>
