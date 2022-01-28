@@ -38,19 +38,13 @@ const menu = [
 
 
 function App() {
-  const [cartIsOpen, setCartIsOpen] = useState(true);
-  const items = React.useContext(MenuContext);
-
-  const print = () => (
-    console.log("Hi there")
-  )
-
-
-
+  const [cartIsOpen, setCartIsOpen] = useState(false);
+ 
+  
   return (
     <MenuContext.Provider value={menu}>
-      <HomePage />
-      {cartIsOpen && <CartSummaryModal/>}
+      <HomePage setCartIsOpen={setCartIsOpen} />
+      {cartIsOpen && <CartSummaryModal setCartIsOpen={setCartIsOpen}/>}
     </MenuContext.Provider>
   );
 }

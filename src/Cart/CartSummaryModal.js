@@ -3,20 +3,29 @@ import React, { useContext } from "react";
 import styles from "./CartSummaryModal.module.css";
 import MenuContext from "../contexts/MenuContext";
 
-const CartSummaryModal = () => {
+const CartSummaryModal = (props) => {
   const menu = useContext(MenuContext);
   let totalAmmount = 0;
 
   //Calculate total price for ordered items
-  menu.filter((item) => {
+  menu.forEach((item) => {
     if (item.orderQty > 0) {
       totalAmmount += item.price * item.orderQty;
     }
   });
 
+  const cartBlurHandler = (e) => console.log(
+    props.setCartIsOpen(false)
+  );
+
+  const preventCardOnClick = (e) => console.log(
+    e.stopPropagation()
+  );
+  
+
   return (
-    <div className={styles.container}>
-      <div  className={styles.card}>
+    <div onClick={cartBlurHandler} className={styles.container}>
+      <div onClick={preventCardOnClick} className={styles.card}>
         {menu
           .filter((ordered) => ordered.orderQty > 0)
           .map((item) => (
@@ -24,7 +33,6 @@ const CartSummaryModal = () => {
               <div className={styles.cart__item}>
                 <div className={styles.cart_item__desc}>
                   <h4>{item.title}</h4>
-
                   <h5>Price: £{item.price}</h5>
                 </div>
                 <div className={styles.qtyControl}>
