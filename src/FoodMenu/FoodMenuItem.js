@@ -10,7 +10,7 @@ const FoodMenuItem = (props) => {
       <br />
       <p>{props.desc}</p>
       <br />£{props.price}
-      <AddItemToCart/>
+      <AddItemToCart id={props.id}/>
       <hr />
     </div>
   );

@@ -1,14 +1,15 @@
 import React, { useContext } from "react";
 
 import styles from "./CartSummaryModal.module.css";
-import MenuContext from "../contexts/MenuContext";
+import { FoodMenu } from "../FoodMenu/FoodMenu";
+import {ItemsToOrderContext} from "../contexts/ItemsToOrderContext";
 
 const CartSummaryModal = (props) => {
-  const menu = useContext(MenuContext);
+  const menu = useContext(ItemsToOrderContext);
   let totalAmmount = 0;
 
   //Calculate total price for ordered items
-  menu.forEach((item) => {
+  FoodMenu.forEach((item) => {
     if (item.orderQty > 0) {
       totalAmmount += item.price * item.orderQty;
     }
@@ -26,7 +27,7 @@ const CartSummaryModal = (props) => {
   return (
     <div onClick={cartBlurHandler} className={styles.container}>
       <div onClick={preventCardOnClick} className={styles.card}>
-        {menu
+        {FoodMenu
           .filter((ordered) => ordered.orderQty > 0)
           .map((item) => (
             <div>
