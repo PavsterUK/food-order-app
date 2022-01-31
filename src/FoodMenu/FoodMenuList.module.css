@@ -12,11 +12,7 @@
   font-size: 1.5rem;
 }
 
-@media only screen and (max-width: 100px) {
-  .container {
-    width: 100vw;
-  }
-}
+
 
 .container h1 {
   font-size: 3rem;
