@@ -1,9 +1,6 @@
 import React from 'react';
 
-export const ItemsToOrderContext = React.createContext({
-  itemsToOrder: [],
-  setitemsToOrder: () => {}
-});
+export const ItemsToOrderContext = React.createContext();
 
 
 
