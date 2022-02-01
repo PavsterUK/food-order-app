@@ -22,6 +22,7 @@ const FoodMenuList = () => {
               title={item.title}
               desc={item.description}
               price={item.price}
+              id={item.id}
             />
           ))}
           Thank You!

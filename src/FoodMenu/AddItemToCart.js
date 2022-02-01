@@ -4,8 +4,7 @@ import styles from "./AddItemToCart.module.css";
 import { ItemsToOrderContext } from "../contexts/ItemsToOrderContext";
 
 const AddItemToCart = (props) => {
-  
-  const {itemsToOrder, setItemsToOrder} = useContext(ItemsToOrderContext);
+  const { itemsToOrder, setItemsToOrder } = useContext(ItemsToOrderContext);
 
   const [itemQty, setItemQty] = useState(1);
 
@@ -13,9 +12,14 @@ const AddItemToCart = (props) => {
     setItemQty(event.target.value);
   };
 
+  
   const addtoCartHandler = (event) => {
     event.preventDefault();
-    setItemsToOrder(...itemsToOrder ,{ id: props.id, qty: itemQty });
+    let orderedItem = {
+      id: props.id,
+      qty: itemQty
+    }
+    setItemsToOrder([...itemsToOrder, orderedItem]);
   };
 
   return (
