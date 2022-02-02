@@ -19,6 +19,7 @@ const CartButton = (props) => {
       <p>Your Cart</p>
       <div className={styles.quantity}>
         {GetItemQty(itemsToOrder)}
+        {console.log(itemsToOrder)}
       </div>
     </div>
   );

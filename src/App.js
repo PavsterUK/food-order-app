@@ -8,8 +8,8 @@ import {ItemsToOrderContext} from "./contexts/ItemsToOrderContext";
 function App() {
   const [cartIsOpen, setCartIsOpen] = useState(false);
 
-  const [itemsToOrder, setItemsToOrder] = useState([]);
-  const value = { itemsToOrder, setItemsToOrder };
+  const [itemsToOrder, setItemsToOrder] = useState({}); // Key = item Id, Value = item qty
+  const value = { itemsToOrder, setItemsToOrder }; 
 
   return (
     <ItemsToOrderContext.Provider value={value}>

@@ -13,14 +13,20 @@ const AddItemToCart = (props) => {
   };
 
   
+
   const addtoCartHandler = (event) => {
     event.preventDefault();
-    let orderedItem = {
-      id: props.id,
-      qty: itemQty
+    let updatedValue = {};
+    updatedValue = { [props.id]: +itemQty };
+
+    if (!(props.id in itemsToOrder)) {
+      setItemsToOrder((itemsToOrder) => ({
+        ...itemsToOrder,
+        ...updatedValue,
+      }));
     }
-    setItemsToOrder([...itemsToOrder, orderedItem]);
   };
+
 
   return (
     <div className={styles.container}>
