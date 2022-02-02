@@ -5,7 +5,7 @@ import { FoodMenu } from "../FoodMenu/FoodMenu";
 import {ItemsToOrderContext} from "../contexts/ItemsToOrderContext";
 
 const CartSummaryModal = (props) => {
-  const menu = useContext(ItemsToOrderContext);
+  const { itemsToOrder, setItemsToOrder } = useContext(ItemsToOrderContext);
   let totalAmmount = 0;
 
   //Calculate total price for ordered items
