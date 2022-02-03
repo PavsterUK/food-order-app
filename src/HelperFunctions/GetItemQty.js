@@ -1,4 +1,4 @@
-import React from "react";
+
 
 export const GetItemQty = (order) => {
   let orderedItemQty = 0;
