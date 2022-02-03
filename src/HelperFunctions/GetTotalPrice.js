@@ -1,10 +1,9 @@
-import React from 'react';
+export const GetTotalPrice = (menu, orderedItems) => {
+  let sum = 0;
 
-const GetTotalPrice = (menu, orderedItems) => {
-  sum = 0;
+  for (let id in orderedItems) {
+    sum += menu[id].price * orderedItems[id];
+  }
 
-  orderedItems.forEach(item => 
-    sum += item.qty * menu
-    ) 
-
+  return sum;
 };

@@ -12,21 +12,24 @@ const AddItemToCart = (props) => {
     setItemQty(event.target.value);
   };
 
-  
-
   const addtoCartHandler = (event) => {
     event.preventDefault();
-    let updatedValue = {};
-    updatedValue = { [props.id]: +itemQty };
+    let updatedValue = { [props.id]: +itemQty };
 
     if (!(props.id in itemsToOrder)) {
-      setItemsToOrder((itemsToOrder) => ({
-        ...itemsToOrder,
+      setItemsToOrder((prevItemsToOrder) => ({
+        ...prevItemsToOrder,
         ...updatedValue,
       }));
+    } else {
+      setItemsToOrder((prevItemsToOrder) => ({
+        ...prevItemsToOrder,
+        [props.id]: (prevItemsToOrder[props.id] + +itemQty)
+      }));
+      console.log("inside second block")
+      console.log(itemsToOrder)
     }
   };
-
 
   return (
     <div className={styles.container}>
